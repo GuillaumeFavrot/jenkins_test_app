@@ -28,8 +28,8 @@ pipeline {
             steps {
                 echo 'Deliver....'
                 sh '''
-                cd /my_app
-                python app.py --first-name=Jenkins --age=100 --email=jenkins.pipeline@gmail.com
+                cd my_app
+                python3 app.py --first-name=Jenkins --age=100 --email=jenkins.pipeline@gmail.com
                 '''
             }
         }
