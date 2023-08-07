@@ -20,7 +20,7 @@ pipeline {
             steps {
                 echo "Testing.."
                 sh '''
-                echo test
+                python3 -m pytest
                 '''
             }
         }
