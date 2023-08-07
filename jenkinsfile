@@ -20,7 +20,7 @@ pipeline {
             steps {
                 echo "Testing.."
                 sh '''
-                pytest
+                python3 pytest
                 '''
             }
         }
@@ -29,7 +29,7 @@ pipeline {
                 echo 'Deliver....'
                 sh '''
                 cd /my_app
-                app.py --first-name=Jenkins --age=100 --email=jenkins.pipeline@gmail.com
+                python3 app.py --first-name=Jenkins --age=100 --email=jenkins.pipeline@gmail.com
                 '''
             }
         }
